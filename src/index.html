@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <base href="/" />
+
+    {{{ meta }}}
+
+    {{{ title }}}
+
+    {{{ script }}}
+
+    {{{ link }}}
+    <link rel="stylesheet" type="text/css" href="{{publicPath}}{{assets.vendor.css}}">
+    <link rel="stylesheet" type="text/css" href="{{publicPath}}{{assets.main.css}}">
+    
+</head>
+
+<body>
+    <div id="app"><div>{{{reactComponentHtml}}}</div></div>
+
+    {{#wantScript}}
+      <script>
+        window.hackcart = {}
+        window.hackcart.PRELOADED_STATE = {{{preloadedState}}}
+      </script>
+    {{/wantScript}}
+
+    <script src="{{assets.vendor.js}}"></script>
+    <script src="{{assets.main.js}}"></script>
+</body>
+
+</html>
