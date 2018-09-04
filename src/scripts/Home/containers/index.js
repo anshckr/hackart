@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
+// import PropTypes from 'prop-types'
+// import { connect } from 'react-redux'
+// import { bindActionCreators } from 'redux'
 import { withRouter } from 'react-router-dom'
 
 class Home extends Component {
@@ -24,12 +24,12 @@ class Home extends Component {
 Home.propTypes = {
 }
 
-const mapStateToProps = (store) => ({
-})
+// const mapStateToProps = (store) => ({
+// })
 
-const mapDispatchToProps = (dispatch) => (
-  bindActionCreators({
-  }, dispatch)
-)
+// const mapDispatchToProps = (dispatch) => (
+//   bindActionCreators({
+//   }, dispatch)
+// )
 
 export default withRouter(Home)
